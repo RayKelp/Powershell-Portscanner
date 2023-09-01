@@ -1,21 +1,31 @@
-# Powershell-Portscanner
+# ps-portscan
 
-### A quite simple interactive portscanner for powershell that supports lists and CIDR.
+This is a PowerShell script that allows you to check connectivity on a list of IP addresses and ports specified by the user. It supports CIDR notation and can check multiple subnets at once.
 
-Usage: just right-click and click "Execute using Powershell".
-Or double click if it's already executing with Powershell by default.
+## Prerequisites
 
-Command line: `./ps-portscan.ps1`.
-Make sure you have the right permissions to execute it in your system.
+Make sure you have PowerShell installed on your system. This script has been tested on PowerShell 5.1.
 
-(Newbies): You can copy and paste the code and save it in a `file.ps1`.
+## Usage
 
-Just execute it and write type the IP address, or the list of IP address that
-you'd want to verify for open ports. Or type the ip address in CIDR notation for
-scanning subnets.
+1. Clone this repository or download the `.\ps-portscan.ps1` file.
 
-Don't forget to separate the IP addresses and the ports by **spaces**.
+2. Open a terminal or command prompt.
+
+3. Navigate to the directory where you saved the `.\ps-portscan.ps1` file.
+
+4. Run the PowerShell script using the following command:
+   ```
+   powershell
+   .\ps-portscan.ps1
+   ```
+
+5. Follow the instructions and type the IP address(es) and port(s) when prompted.
+
 Example:
-(IPs: `192.168.0.1 192.168.0.2 192.168.0.3`).
-(Ports: `22 23 80 443`).
+```
+$ .\ps-portscan.ps1
+$ 192.168.0.1 192.168.0.2 192.168.0.3
+$ 22 23 80 443
+```
 
