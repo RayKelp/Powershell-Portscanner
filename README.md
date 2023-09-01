@@ -20,12 +20,28 @@ Make sure you have PowerShell installed on your system. This script has been tes
    .\ps-portscan.ps1
    ```
 
-5. Follow the instructions and type the IP address(es) and port(s) when prompted.
+5. Follow the instructions in the console to enter the IPs and ports you want to check.
 
-Example:
+The script will start the verification and display the connectivity status for each combination of IP and port.
+After the verification is complete, it will wait for you to press a key to exit.
+
+## Examples
+Here are some examples of how you can use the script:
+
+Check connectivity for a single IP and multiple ports.
+Check connectivity for multiple IPs and a single port.
+Use CIDR notation to check multiple subnets in a single run.
 ```
 $ .\ps-portscan.ps1
 $ 192.168.0.1 192.168.0.2 192.168.0.3
 $ 22 23 80 443
 ```
+
+## Contribution
+Feel free to contribute to this project. You can submit issues, improvements, or feature requests. We are open to collaborations.
+
+## License
+This project is licensed under the MIT License.
+
+Enjoy! If you have any questions or issues, feel free to create an issue in this repository.
 
