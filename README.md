@@ -41,7 +41,8 @@ Ports: 22 23 80 443
 Feel free to contribute to this project. You can submit issues, improvements, or feature requests. We are open to collaborations.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT [LICENSE](LICENSE.txt)
+.
 
 Enjoy! If you have any questions or issues, feel free to create an issue in this repository.
 
