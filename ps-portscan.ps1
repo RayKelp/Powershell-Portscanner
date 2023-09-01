@@ -1,3 +1,5 @@
+# Copyright 2023 Rayan Araujo.
+
 Write-Host ""
 Write-Host " Insert an IP or a list of IP addresses you'd like to scan. Separe them by space (Ex: 192.168.1.1 192.168.1.2 192.168.1.3)"
 Write-Host " Then insert the ports you want you check, also separated by space."
