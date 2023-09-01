@@ -8,5 +8,5 @@ scanning subnets.
 
 Don't forget to separate the IP addresses and the ports by **spaces**.
 Example:
-(IPs: ´192.168.0.1 192.168.0.2 192.168.0.3´).
-(Ports: ´22 23 80 443´).
+(IPs: `192.168.0.1 192.168.0.2 192.168.0.3`).
+(Ports: `22 23 80 443`).
