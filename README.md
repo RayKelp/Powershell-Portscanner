@@ -32,9 +32,9 @@ Check connectivity for a single IP and multiple ports.
 Check connectivity for multiple IPs and a single port.
 Use CIDR notation to check multiple subnets in a single run.
 ```
-$ .\ps-portscan.ps1
-$ 192.168.0.1 192.168.0.2 192.168.0.3
-$ 22 23 80 443
+.\ps-portscan.ps1
+IPs: 192.168.0.1 192.168.0.2 192.168.0.3
+Ports: 22 23 80 443
 ```
 
 ## Contribution
