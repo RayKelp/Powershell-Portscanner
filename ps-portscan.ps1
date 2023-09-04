@@ -8,6 +8,7 @@ Function Show-Usage
     Write-Host " type IP addresses, then the ports you'd like to check, separing them by space."
     Write-Host " IPs: ""Ex: 192.168.1.1 192.168.1.2 192.168.1.3"""
     Write-Host " Ports: ""22 80 443"""
+    Start-Sleep -Seconds 1
     Write-Host ""
 }
 
