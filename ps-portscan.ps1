@@ -1,11 +1,39 @@
 # Copyright 2023 Rayan Araujo.
 
+Function Show-Usage
+{
+    Write-Host ""
+    Write-Host " Error: no input provided."
+    Write-Host " Usage:  ""./ps-portscan.ps1."""
+    Write-Host " type IP addresses, then the ports you'd like to check, separing them by space."
+    Write-Host " IPs: ""Ex: 192.168.1.1 192.168.1.2 192.168.1.3"""
+    Write-Host " Ports: ""22 80 443"""
+    Write-Host ""
+}
+
 Write-Host ""
 Write-Host " Insert an IP or a list of IP addresses you'd like to scan. Separe them by space (Ex: 192.168.1.1 192.168.1.2 192.168.1.3)"
 Write-Host " Then insert the ports you want you check, also separated by space."
 Write-Host ""
+
 $ipInput = (Read-Host "IPs")
+# Verifies if string is empty
+if ([string]::IsNullOrEmpty($ipInput))
+{
+    Show-Usage
+    exit
+}
+
+
 $ports = (Read-Host "Ports") -Split ' '
+if ([string]::IsNullOrEmpty($ports))
+{
+    Show-Usage
+    exit
+}
+
+
+
 
 # If CIDR, then calculate the number of hosts
 if ($ipInput -match '/')
@@ -24,6 +52,8 @@ if ($ipInput -match '/')
 	clear
 	Write-Host "Scanning ""$subnetSize"" hosts in the IP ""$ip"" for the following ports: ""$ports"""
 }
+
+
 # If not CIDR, just separe the ips by spaces.
 else
 {
@@ -32,6 +62,7 @@ else
 	Write-Host "Scanning ""$ips"" for the ports ""$ports"""
 }
 
+
 # Start scan
 Write-Host "------------------------------------------------------"
 Write-Host ""
@@ -39,6 +70,9 @@ Write-Host ""
 Write-Host ""
 Write-Host ""
 Write-Host ""
+Write-Host ""
+Write-Host ""
+
 
 foreach ($ip in $ips)
 {
@@ -54,6 +88,7 @@ foreach ($ip in $ips)
 	}
     Write-Host ""
 }
+
 
 Write-Host ""
 Write-Host ""
