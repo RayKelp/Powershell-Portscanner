@@ -4,8 +4,6 @@ This is a PowerShell script that allows you to check connectivity on a list of I
 
 ![image](https://github.com/ManoKelpo/Powershell-Portscanner/assets/67763292/c78dbc45-f582-4ea5-98dd-fb1f43b62e5e)
 
-![image](https://github.com/ManoKelpo/Powershell-Portscanner/assets/67763292/704069ff-a84e-4417-84f4-a7c87bd1a6c7)
-
 ## Prerequisites
 
 Make sure you have PowerShell installed on your system. This script has been tested on PowerShell 5.1.
@@ -35,6 +33,9 @@ Here are some examples of how you can use the script:
 Check connectivity for a single IP and multiple ports.
 Check connectivity for multiple IPs and a single port.
 Use CIDR notation to check multiple subnets in a single run.
+
+![image](https://github.com/ManoKelpo/Powershell-Portscanner/assets/67763292/704069ff-a84e-4417-84f4-a7c87bd1a6c7)
+
 ```
 .\ps-portscan.ps1
 IPs: 192.168.0.1 192.168.0.2 192.168.0.3
